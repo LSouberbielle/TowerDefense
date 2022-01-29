@@ -9,6 +9,7 @@ public class FinishLine : MonoBehaviour
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
         if (enemy)
         {
+            GameManager.Instance.TakeDamage(enemy.Damage);
             Destroy(enemy.gameObject);
         }
     }

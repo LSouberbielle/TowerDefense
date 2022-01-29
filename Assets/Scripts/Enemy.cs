@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public Transform EndPoint;
     public float Speed = 1f;
+    public float Damage = 10f;
 
 
     public void Update()
